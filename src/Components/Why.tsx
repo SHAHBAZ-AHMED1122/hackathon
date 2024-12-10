@@ -77,7 +77,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, libero!
 
 
 </div>
-{/* <div className="h-screen w-full bg-[url('/background.jpg')] bg-cover bg-center"> */}
 <div>
 <Image className='mx-auto pt-32 pb-32 cursor-pointer' src="/Icon Box.png" alt='' width={1000} height={800}/>
 </div>

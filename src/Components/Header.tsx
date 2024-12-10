@@ -14,10 +14,8 @@ function Header() {
       <div className="container mx-auto flex  items-center px-4 py-3">
         <div className="text-lg font-bold">
           
-            {/* <Link href="/">MyLogo</Link> */}
           
         </div>
-        {/* Hamburger Icon */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -48,7 +46,6 @@ function Header() {
             </svg>
           </button>
         </div>
-        {/* Links */}
         <div
           className={`${
             isOpen ? 'block' : 'hidden'

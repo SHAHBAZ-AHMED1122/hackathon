@@ -6,7 +6,6 @@ import Image from 'next/image';
 function Footer() {
   return (
     <div className='  bg-black mx-auto md:flex justify-between items-center '>
-        {/* <div className='sm:flex'> */}
       <div className=''>
         <h1 className='font-bold text-2xl text-white pt-4 pb-4'>About us</h1>
         <p className='text-white pb-4 w-60'>orporate clients and leisure travelers has
@@ -49,7 +48,6 @@ Sunday - Closed</div>
 
 </div>
 </div>
-{/* </div> */}
 <div className='flex flex-col gap-3 text-white'>
 <h1 className='font-bold text-2xl text-white pt-4 pb-4'>Help?</h1>
 <div>  

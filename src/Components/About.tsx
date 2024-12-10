@@ -16,7 +16,7 @@ function About() {
             className="pt-4"
           />
           <h1 className="font-bold text-[48px] text-white mt-4 mb-4">
-            <span className="text-yellow-500">We</span> Create the best<br />{" "}
+            <span className="text-yellow-500">We</span> Create the best<br />
             foody Product
           </h1>
           <p className="text-white font-thin pt-4 pb-4">
