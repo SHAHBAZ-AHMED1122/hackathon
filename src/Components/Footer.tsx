@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <div className='  bg-black mx-auto md:flex justify-between items-center '>
+    <div className='px-20  bg-black mx-auto md:flex justify-between items-center pb-32'>
       <div className=''>
         <h1 className='font-bold text-2xl text-white pt-4 pb-4'>About us</h1>
         <p className='text-white pb-4 w-60'>orporate clients and leisure travelers has

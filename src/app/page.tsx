@@ -20,7 +20,7 @@ function page() {
       <Choose/>
       <Feedback/>
       <Latest/>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

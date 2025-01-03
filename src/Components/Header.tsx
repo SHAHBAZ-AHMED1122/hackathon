@@ -7,7 +7,7 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className='bg-black'>
+    <div className=' px-20 bg-black'>
 <div><h1 className='font-bold text-2xl text-yellow-500 text-center pt-10 pb-10'>Food<span className='text-white'>tuck</span></h1></div>
       <header className='flex flex-col lg:flex lg:flex-row items-center justify-between'>
 <nav className='text-white' >
@@ -51,25 +51,25 @@ function Header() {
             isOpen ? 'block' : 'hidden'
           } md:flex space-y-2 md:space-y-0 md:space-x-4`}
         >
-          <Link href="/services" className="block px-2 py-1">
+          <Link href="/" className="block px-2 py-1">
           Home
           </Link>
-          <Link href="/services" className="block px-2 py-1">
+          <Link href="/menu" className="block px-2 py-1">
           Menu
           </Link>
-          <Link href="/services" className="block px-2 py-1">
+          <Link href="/blogs" className="block px-2 py-1">
           Blogs
           </Link>
-          <Link href="/services" className="block px-2 py-1">
+          <Link href="/pages" className="block px-2 py-1">
           Pages
           </Link>
-          <Link href="/services" className="block px-2 py-1">
+          <Link href="/about" className="block px-2 py-1">
           About
           </Link>
-          <Link href="/services" className="block px-2 py-1">
+          <Link href="/shop" className="block px-2 py-1">
           Shop
           </Link>
-          <Link href="/services" className="block px-2 py-1">
+          <Link href="/contact" className="block px-2 py-1">
           Contact
           </Link>
           
