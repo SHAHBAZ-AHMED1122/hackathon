@@ -4,9 +4,12 @@ import Footer from '@/Components/Footer'
 import Header from '@/Components/Header'
 function page() {
   return (
-    <div>
+    <div className='bg-black'>
         <Header/>
+        <div className='pt-20 px-20'>
       <Latest/>
+
+        </div>
       <Footer/>
     </div>
   )

@@ -5,9 +5,12 @@ import React from 'react'
 
 function page() {
   return (
-    <div>
+    <div className='bg-black'>
         <Header/>
+        <div className='px-20'>
+
       <About/>
+        </div>
       <Footer/>
     </div>
   )

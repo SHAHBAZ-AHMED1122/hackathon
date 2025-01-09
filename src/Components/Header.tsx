@@ -9,14 +9,15 @@ function Header() {
   return (
     <div className=' px-20 bg-black'>
 <div><h1 className='font-bold text-2xl text-yellow-500 text-center pt-10 pb-10'>Food<span className='text-white'>tuck</span></h1></div>
-      <header className='flex flex-col lg:flex lg:flex-row items-center justify-between'>
+      <header className='flex  lg:flex lg:flex-row items-center justify-between'>
 <nav className='text-white' >
       <div className="container mx-auto flex  items-center px-4 py-3">
         <div className="text-lg font-bold">
           
           
         </div>
-        <div className="md:hidden">
+        {/* yaha se shoro */}
+        <div className="lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
@@ -46,10 +47,11 @@ function Header() {
             </svg>
           </button>
         </div>
+        
         <div
           className={`${
             isOpen ? 'block' : 'hidden'
-          } md:flex space-y-2 md:space-y-0 md:space-x-4`}
+          } lg:flex space-y-2 lg:space-y-0 md:space-x-4`}
         >
           <Link href="/" className="block px-2 py-1">
           Home
@@ -78,7 +80,7 @@ function Header() {
     </nav>
     <div className='flex items-center'>
       <div className='p-2 rounded-full bg-black border border-yellow-500 px-4'>
-      <input type="text" placeholder='Search....' className='bg-black'  />
+      <input type="text" placeholder='Search....' className='bg-black outline-none text-white'  />
       <SearchIcon className='text-white'/>
       </div>
 <div>

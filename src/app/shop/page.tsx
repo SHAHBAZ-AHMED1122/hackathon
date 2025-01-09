@@ -5,9 +5,12 @@ import Header from '@/Components/Header'
 
 function page() {
   return (
-    <div>
+    <div className='bg-black'>
         <Header/>
+        <div className='px-20'>
       <Why/>
+
+        </div>
       <Footer/>
     </div>
   )

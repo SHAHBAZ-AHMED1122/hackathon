@@ -34,10 +34,10 @@ function Latest() {
           </div>
           <div className='flex items-center'>
 <div>
-            <input className='p-2 bg-yellow-400 text-white rounded-sm' type="text" placeholder='Enter your Email' />
+            <input className='p-2 bg-yellow-400 text-white rounded-sm' type="text" placeholder='Enter your Email' /><span></span>
 </div>
             <div>
-            <span className='text-yellow-500 rounded-sm bg-white pt-[11px] pb-[11px] '>subscribe</span>
+            {/* <span className='text-yellow-500 rounded-sm bg-white pt-[11px] pb-[11px] '>subscribe</span> */}
             </div>
           </div>
           </div>
