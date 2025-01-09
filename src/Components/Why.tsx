@@ -42,8 +42,8 @@ function Why() {
             height={100}
             className="pt-4"
           />
-          <h1 className="font-bold text-[48px] text-white mt-4 mb-4">
-            <span className="text-yellow-500">Ex</span>tra ordinary taste <br />{" "}
+          <h1 className="font-bold text-[30px] text-white mt-4 mb-4">
+            <span className="text-yellow-500">Ex</span>tra ordinary taste <br />
             And Experienced
           </h1>
           <p className="text-white font-thin pt-4 pb-4">

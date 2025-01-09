@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className=' px-20 bg-black'>
 <div><h1 className='font-bold text-2xl text-yellow-500 text-center pt-10 pb-10'>Food<span className='text-white'>tuck</span></h1></div>
-      <header className='flex  lg:flex lg:flex-row items-center justify-between'>
+      <header className='flex flex-col sm:flex sm:flex-row items-center justify-between'>
 <nav className='text-white' >
       <div className="container mx-auto flex  items-center px-4 py-3">
         <div className="text-lg font-bold">
