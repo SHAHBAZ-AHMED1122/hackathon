@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <div className='px-20  bg-black mx-auto md:flex justify-between items-center pb-32'>
+    <div className='px-20  bg-black mx-auto md:flex  justify-between items-center pb-32'>
       <div>
         <h1 className='font-bold text-2xl text-white pt-4 pb-4'>About us</h1>
         <p className='text-white pb-4 min-w-20 '>orporate clients and leisure travelers has
@@ -20,7 +20,7 @@ Sunday - Closed</div>
 </div>
       </div>
 <div className='text-white'>
-<h1 className='font-bold text-2xl text-white pt-4 pb-4'>Useful Links</h1>
+<h1 className='font-bold text-2xl text-white pt-8 pb-4'>Useful Links</h1>
 <div className='flex flex-col gap-3'>
 <div>  
 
@@ -43,13 +43,13 @@ Sunday - Closed</div>
         </div>
         <div>
 
-<Link className='' href="/">MContact</Link>
+<Link className='' href="/">My Contact</Link>
         </div>
 
 </div>
 </div>
 <div className='flex flex-col gap-3 text-white'>
-<h1 className='font-bold text-2xl text-white pt-4 pb-4'>Help?</h1>
+<h1 className='font-bold text-2xl text-white pt-10 pb-4'>Help?</h1>
 <div>  
 
 <Link className='' href="/">FAQ</Link>    <br />

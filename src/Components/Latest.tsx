@@ -15,13 +15,13 @@ function Latest() {
           <div className='flex justify-center cursor-pointer pb-20'>
 
           <div>
-            <Image className='p-1' src="/Blog Card 1.png" alt='' width={400} height={400}/>
+            <Image className='p-1 transform transition-transform duration-200 ease-in-out hover:scale-105' src="/Blog Card 1.png" alt='' width={400} height={400}/>
           </div>
           <div>
-            <Image className='p-1' src="/Blog Card 2.png" alt='' width={400} height={400}/>
+            <Image className='p-1 transform transition-transform duration-200 ease-in-out hover:scale-105' src="/Blog Card 2.png" alt='' width={400} height={400}/>
           </div>
           <div>
-            <Image className='p-1' src="/Blog Card 3.png" alt='' width={400} height={400}/>
+            <Image className='p-1 transform transition-transform duration-200 ease-in-out hover:scale-105' src="/Blog Card 3.png" alt='' width={400} height={400}/>
           </div>
           </div>
           <div className='flex flex-col  md:flex md:flex-row md:items-center justify-between  border-b border-yellow-500 pb-20'>
@@ -37,7 +37,6 @@ function Latest() {
             <input className='p-2 bg-yellow-400 text-white rounded-sm' type="text" placeholder='Enter your Email' /><span></span>
 </div>
             <div>
-            {/* <span className='text-yellow-500 rounded-sm bg-white pt-[11px] pb-[11px] '>subscribe</span> */}
             </div>
           </div>
           </div>

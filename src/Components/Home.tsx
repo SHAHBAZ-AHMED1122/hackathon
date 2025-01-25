@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import Link from "next/link"; 
 
 function Home() {
   return (
@@ -10,10 +11,10 @@ function Home() {
         <div>
         <div className="text-white ">
 
-       < FacebookIcon className="mb-5 mt-10"/>
+       < FacebookIcon className="mb-5 mt-10 hover:text-yellow-500"/>
        <br />
-       < TwitterIcon  className="mb-5"/> 
-       <Image  className="mb-10"
+       < TwitterIcon  className="mb-5  hover:text-yellow-500"/> 
+       <Image  className="mb-10 "
             src="/.png"
             alt="quick"
             width={20}
@@ -37,7 +38,9 @@ function Home() {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br /> Quidem
             eveniet expedita illum aut, rem sapiente.
           </p>
-          <button className="bg-yellow-500 px-10 py-4 text-white rounded-full">See Menu</button>
+          <Link href="/menu">
+          <button className="bg-yellow-500 px-10 py-4 text-white rounded-full hover:bg-yellow-600 transition">See Menu</button>
+          </Link>
         </div>
         <div><Image
             src="/Image.png"

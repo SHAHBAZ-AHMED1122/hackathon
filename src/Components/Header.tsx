@@ -16,7 +16,6 @@ function Header() {
           
           
         </div>
-        {/* yaha se shoro */}
         <div className="lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -53,25 +52,25 @@ function Header() {
             isOpen ? 'block' : 'hidden'
           } lg:flex space-y-2 lg:space-y-0 md:space-x-4`}
         >
-          <Link href="/" className="block px-2 py-1">
+          <Link href="/" className="block px-2 py-1 hover:text-yellow-500 ">
           Home
           </Link>
-          <Link href="/menu" className="block px-2 py-1">
+          <Link href="/menu" className="block px-2 py-1  hover:text-yellow-500 ">
           Menu
           </Link>
-          <Link href="/blogs" className="block px-2 py-1">
+          <Link href="/blogs" className="block px-2 py-1  hover:text-yellow-500 ">
           Blogs
           </Link>
-          <Link href="/pages" className="block px-2 py-1">
+          <Link href="/pages" className="block px-2 py-1  hover:text-yellow-500 ">
           Pages
           </Link>
-          <Link href="/about" className="block px-2 py-1">
+          <Link href="/about" className="block px-2 py-1  hover:text-yellow-500 ">
           About
           </Link>
-          <Link href="/shop" className="block px-2 py-1">
+          <Link href="/shop" className="block px-2 py-1  hover:text-yellow-500 ">
           Shop
           </Link>
-          <Link href="/contact" className="block px-2 py-1">
+          <Link href="/contact" className="block px-2 py-1  hover:text-yellow-500 ">
           Contact
           </Link>
           

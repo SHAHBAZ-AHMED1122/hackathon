@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import CheckIcon from '@mui/icons-material/Check';
+import Link from 'next/link';  
+
 
 function About() {
   return (
@@ -55,8 +57,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, libero!
 </div>
   </div>
 </div>
-
-          <button className="bg-yellow-500 px-10 py-4 text-white rounded-full">Read More</button>
+<Link href="readmore">
+          <button className="bg-yellow-500 px-10 py-4 text-white rounded-full  hover:bg-yellow-600 transition">Read More</button>
+</Link>
         </div>
 <div className='flex flex-col'>
 
@@ -65,7 +68,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, libero!
             src="/unsplash_fdlZBWIP0aM.png"
             alt="dish"
             width={700}
-            height={700} className="p-2"/>
+            height={700} className="p-2 transform transition-transform duration-200 ease-in-out hover:scale-105"/>
             </div> 
             <div className='flex'>
 
@@ -74,14 +77,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, libero!
             src="/unsplash_jpkfc5_d-DI.png"
             alt="dish"
             width={350}
-            height={350} className="px-1"/>
+            height={350} className="px-1 transform transition-transform duration-200 ease-in-out hover:scale-105"/>
             </div>
         <div>
           <Image
             src="/unsplash_mAQZ3X_8_l0.png"
             alt="dish"
             width={350}
-            height={350} className="px-1"/>
+            height={350} className="px-1 transform transition-transform duration-200 ease-in-out hover:scale-105"/>
             </div>
             </div>
             </div>
