@@ -73,6 +73,7 @@
 
 
 "use client"
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 export default function ProductPage() {
@@ -113,7 +114,7 @@ export default function ProductPage() {
             <main className="container mx-auto p-6">
                 <section className="bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row items-center">
                     <div className="product-image md:w-1/2 mb-6 md:mb-0">
-                        <img src={product.image} alt={product.name} className="rounded-lg w-full" />
+                        <Image src={product.image} alt={product.name} className="rounded-lg w-full" />
                     </div>
                     <div className="product-details md:w-1/2 md:pl-8">
                         <h2 className="text-3xl font-bold mb-4 text-gray-800">{product.name}</h2>

@@ -17,7 +17,7 @@ function Choose() {
       setData(res);
     };
     getData();
-  }, []);
+  }, [qurey]);
   return (
     <div className="bg-black">
       <Image

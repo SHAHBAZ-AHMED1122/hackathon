@@ -76,7 +76,7 @@ function Category() {
       setData(res);
     };
     getData();
-  }, []);
+  }, [query]);
 
   return (
     <div className="bg-black">
