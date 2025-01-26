@@ -148,7 +148,7 @@ function Category() {
       }
     };
     getData();
-  }, []); // Dependency array does not include `query` as it is a constant
+  }, [query]); // Dependency array does not include `query` as it is a constant
 
   return (
     <div className="bg-black">
