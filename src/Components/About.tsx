@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import CheckIcon from '@mui/icons-material/Check';
 import Link from 'next/link';  
-
+//testing
 
 function About() {
   return (
