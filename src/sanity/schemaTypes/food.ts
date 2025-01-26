@@ -1,4 +1,4 @@
-export default {
+ const FoodData = {
     name: 'food',
     type: 'document',
     title: 'Food',
@@ -58,3 +58,6 @@ export default {
       },
     ],
   };
+
+
+  export default FoodData;
