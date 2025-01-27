@@ -7,7 +7,7 @@ interface Product {
   name: string;
   imageUrl: string;
   category: string;
-  originalPrice: number;
+  originalPrice: number; 
   tags: string[];
   description: string;
   available: boolean;
@@ -21,6 +21,7 @@ interface Params {
 export default function ProductPage({ params }: { params: Params }) {
   const [data, setData] = useState<Product | null>(null);
   const [message, setMessage] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const query = `*[_type == 'food' && _id == "${params.id}"]{
         name,
@@ -52,51 +53,85 @@ export default function ProductPage({ params }: { params: Params }) {
 
   return (
     <div className="bg-gray-100 text-gray-900 min-h-screen">
-      <header className="bg-white text-black p-6 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-yellow-500">Q-Commerce</h1>
-          <nav>
-            <ul className="flex space-x-6">
-              <li>
-                <a href="#" className="hover:text-yellow-500">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-500">
-                  Shop
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-500">
-                  Cart
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-yellow-500">
-                  Account
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+     <header className="bg-white text-black p-4 md:p-6 shadow-md">
+  <div className="container mx-auto flex flex-wrap justify-between items-center">
+    {/* Logo or Title */}
+    <h1 className="text-2xl md:text-3xl font-bold text-yellow-500">Chef Details</h1>
+
+    {/* Hamburger Menu for small screens */}
+    <button
+      className="block md:hidden text-gray-700 focus:outline-none"
+      aria-label="Toggle Menu"
+      onClick={() => setMenuOpen(!menuOpen)}
+    >
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        ></path>
+      </svg>
+    </button>
+
+    {/* Navigation */}
+    <nav
+      className={`${
+        menuOpen ? "block" : "hidden"
+      } w-full md:flex md:items-center md:w-auto mt-4 md:mt-0`}
+    >
+      <ul className="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0">
+        <li>
+          <a
+            href="/"
+            className="hover:text-yellow-500 text-gray-800 text-lg md:text-base"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/about"
+            className="hover:text-yellow-500 text-gray-800 text-lg md:text-base"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="/contact"
+            className="hover:text-yellow-500 text-gray-800 text-lg md:text-base"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
       <main className="container mx-auto p-6">
-        <section className="bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row items-center">
-          <div className="product-image md:w-1/2 mb-6 md:mb-0">
+        <section className="bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row items-center gap-6">
+          <div className="product-image w-full md:w-1/2">
             {data?.imageUrl && (
               <Image
                 src={data.imageUrl}
                 alt={data.name}
-                width={200}
-                height={200}
+                width={300}
+                height={300}
                 className="rounded-lg w-full object-contain"
               />
             )}
           </div>
-          <div className="product-details md:w-1/2 md:pl-8">
-            <h2 className="text-3xl font-bold mb-4 text-gray-800">
+          <div className="product-details w-full md:w-1/2 md:pl-8">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800">
               {data?.name}
             </h2>
             <p className="text-lg text-gray-600 mb-2">
@@ -105,7 +140,7 @@ export default function ProductPage({ params }: { params: Params }) {
             <p className="text-xl text-gray-500 line-through mb-1">
               {data?.originalPrice}
             </p>
-            <p className="text-2xl font-semibold text-yellow-500 mb-4">
+            <p className="text-2xl sm:text-3xl font-semibold text-yellow-500 mb-4">
               {data?.price}
             </p>
             <p className="text-gray-700 mb-6">{data?.description}</p>
