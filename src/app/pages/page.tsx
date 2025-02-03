@@ -3,6 +3,10 @@ import Footer from '@/Components/Footer'
 import Header from '@/Components/Header'
 import React from 'react'
 
+export const metadata = {
+  title: "Pages",
+};
+
 function page() {
   return (
     <div className='bg-black'>

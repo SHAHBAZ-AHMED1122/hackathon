@@ -3,6 +3,9 @@ import Category from '@/Components/Category'
 import React from 'react'
 import Footer from '@/Components/Footer'
 import Header from '@/Components/Header'
+export const metadata = {
+  title: "Menu",
+};
 
 function page() {
   return (

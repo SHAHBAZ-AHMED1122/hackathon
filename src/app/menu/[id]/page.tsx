@@ -3,6 +3,8 @@ import { client } from "@/sanity/client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
+
+
 interface Product {
   name: string;
   imageUrl: string;

@@ -2,6 +2,12 @@ import Latest from '@/Components/Latest'
 import React from 'react'
 import Footer from '@/Components/Footer'
 import Header from '@/Components/Header'
+
+export const metadata = {
+  title: "Blogs",
+};
+
+
 function page() {
   return (
     <div className='bg-black'>

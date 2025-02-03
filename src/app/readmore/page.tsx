@@ -87,6 +87,10 @@
 
 import React from "react";
 
+export const metadata = {
+  title: "more about us",
+};
+
 export default function About() {
   return (
     <div className="bg-black text-white min-h-screen">
