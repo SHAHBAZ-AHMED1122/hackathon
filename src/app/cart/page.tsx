@@ -1,10 +1,19 @@
 "use client";
 
 import { useState, useEffect } from "react";
- 
-  
+import Image from "next/image";
+
+// Define a type for cart items
+interface CartItem {
+  name: string;
+  imageUrl: string;
+  price: number;
+  quantity: number;
+}
+
 export default function CartPage() {
-  const [cartItems, setCartItems] = useState<any[]>([]);
+  // Use the CartItem type for cartItems
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   useEffect(() => {
     const storedCart = localStorage.getItem("cart");
@@ -28,7 +37,7 @@ export default function CartPage() {
             {cartItems.map((item, index) => (
               <div key={index} className="flex justify-between items-center py-4">
                 <div className="flex items-center gap-4">
-                  <img src={item.imageUrl} alt={item.name} className="w-16 h-16 rounded-lg" />
+                  <Image src={item.imageUrl} alt={item.name} className="w-16 h-16 rounded-lg" />
                   <div>
                     <h2 className="text-lg font-semibold">{item.name}</h2>
                     <p className="text-gray-600">${item.price}</p>

@@ -378,7 +378,7 @@ export default function ProductPage({ params }: { params: Params }) {
   const handleAddToCart = () => {
     if (!data) return;
 
-    let cartItems = JSON.parse(localStorage.getItem("cart") || "[]");
+  const cartItems = JSON.parse(localStorage.getItem("cart") || "[]");
 
     // Check if the item already exists in the cart
     const isItemInCart = cartItems.some((item: Product) => item.name === data.name);
